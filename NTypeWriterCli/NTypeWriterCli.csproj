@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Company>TietoEVRY</Company>
+    <Authors>TietoEVRY</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="NetStandardStub.cspro_" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="NetStandardStub.cspro_" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Buildalyzer" Version="3.2.2" />
+    <PackageReference Include="Buildalyzer.Workspaces" Version="3.2.2" />
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="NTypewriter" Version="0.1.10-alpha" />
+    <PackageReference Include="NTypewriter.CodeModel.Roslyn" Version="0.1.10-alpha" />
+    <PackageReference Include="NTypewriter.Editor.Config" Version="0.1.10-alpha" />
+  </ItemGroup>
+
+</Project>

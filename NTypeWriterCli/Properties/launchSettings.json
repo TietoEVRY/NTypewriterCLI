@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NTypeWriterCli": {
+      "commandName": "Project",
+      "commandLineArgs": "-v -s C:\\DeveloperArea\\WESE-Common\\WE.TemplateEditor\\WE.TemplateEditor.sln"
+    }
+  }
+}
