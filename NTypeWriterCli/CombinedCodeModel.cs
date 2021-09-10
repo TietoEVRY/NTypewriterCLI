@@ -1,14 +1,12 @@
-﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using NTypewriter.CodeModel;
 
 namespace NTypeWriterCli
 {
     public class CombinedCodeModel : ICodeModel
     {
-        private List<ICodeModel> _codeModels = new();
+        private readonly List<ICodeModel> _codeModels = new List<ICodeModel>();
 
         public CombinedCodeModel(IEnumerable<ICodeModel> codeModels)
         {
