@@ -1,6 +1,6 @@
 # NTypewriterCLI
 
-Generic CLI version of NTypewriter, for use in build pipelines and editors other than Visual Studio.
+Generic CLI version of [NTypewriter](https://github.com/NeVeSpl/NTypewriter), for use in build pipelines and editors other than Visual Studio.
 
 |                                   | NTypewriter Extension | NTypewriterCLI |
 | --------------------------------- | --------------------- | -------------- |
