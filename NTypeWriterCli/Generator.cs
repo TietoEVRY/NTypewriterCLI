@@ -141,6 +141,14 @@ namespace NTypeWriterCli
                         {
                             var path = Path.Combine(Path.GetDirectoryName(templatePath), renderedItem.Name);
                             if (Verbose) await Console.Error.WriteLineAsync($"[-] Saving captured output to '{path}'");
+
+                            var targetDirectory = Path.GetDirectoryName(path);
+                            if (!Directory.Exists(targetDirectory))
+                            {
+                                if (Verbose) await Console.Error.WriteLineAsync($"[-] Creating directory path '{targetDirectory}'");
+                                Directory.CreateDirectory(targetDirectory);
+                            }
+
                             File.WriteAllText(path, renderedItem.Content);
                         }
                     }
