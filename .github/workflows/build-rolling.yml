@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal -c Release
     - name: Generate generic release
-      run: dotnet publish --no-build -c Release
+      run: dotnet publish --no-build -c Release --self-contained false
     - name: Upload generic release
       uses: actions/upload-artifact@v2.2.4
       with:
